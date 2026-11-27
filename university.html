@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دانشگاه آزاد اسلامی واحد بیرجند</title>
+</head>
+<body>
+
+    <!-- منوی ناوبری برای ارتباط صفحات با یکدیگر -->
+    <nav>
+        <a href="#home">صفحه اصلی (معرفی دانشگاه)</a> | 
+        <a href="#register">ثبت‌نام دانشجویان جدید</a> | 
+        <a href="#about">درباره ما</a>
+    </nav>
+    <hr>
+
+    <!-- صفحه اول: معرفی دانشگاه -->
+    <section id="home">
+        <h1>دانشگاه آزاد اسلامی واحد بیرجند</h1>
+        
+        <!-- در خط زیر، اگر عکس را در کنار فایل html ذخیره کردید، فقط اسم فایل را بگذارید (مثلا logo.png) -->
+        <img src="logo.png" alt="لوگوی دانشگاه آزاد بیرجند" style="max-width: 100%; height: auto; max-height: 300px;">
+        
+        <p>
+            دانشگاه آزاد اسلامی واحد بیرجند یکی از مراکز آموزش عالی معتبر در استان خراسان جنوبی است. این دانشگاه با هدف تربیت نیروی انسانی متخصص و کارآمد، محیطی پویا و علمی برای دانشجویان فراهم کرده است. با بهره‌گیری از اساتید مجرب و امکانات آموزشی و پژوهشی مناسب، این واحد دانشگاهی همواره در تلاش است تا بستری برای رشد و شکوفایی استعدادهای دانشجویان فراهم آورد.
+        </p>
+        
+        <!-- متن و لینک اضافه شده طبق درخواست شما -->
+        <p>برای ثبت نام در دانشگاه از بخش ثبت نام استفاده کنید.</p>
+        <p><a href="#register">رفتن به فرم ثبت نام</a></p>
+    </section>
+
+    <hr>
+
+    <!-- صفحه دوم: فرم ثبت‌نام -->
+    <section id="register">
+        <h2>ثبت‌نام دانشجویان جدید</h2>
+        <p>لطفاً اطلاعات خود را با دقت وارد کنید. فیلدهای ستاره‌دار الزامی هستند.</p>
+        
+        <form action="#" method="get">
+            <fieldset>
+                <legend>مشخصات فردی</legend>
+                
+                <label>نام: *</label>
+                <input type="text" name="firstname" required><br><br>
+
+                <label>نام خانوادگی: *</label>
+                <input type="text" name="lastname" required><br><br>
+
+                <label>کد ملی (۱۰ رقم): *</label>
+                <input type="text" name="national_id" pattern="\d{10}" title="کد ملی باید دقیقا ۱۰ عدد باشد" required><br><br>
+
+                <label>شماره همراه (با ۰۹ شروع شود): *</label>
+                <input type="tel" name="mobile" pattern="09\d{9}" title="شماره همراه باید ۱۱ رقم و با ۰۹ شروع شود" required><br><br>
+
+                <label>تاریخ تولد: *</label>
+                <input type="date" name="birthdate" required><br><br>
+
+                <label>جنسیت: *</label>
+                <input type="radio" name="gender" value="male" required> مرد
+                <input type="radio" name="gender" value="female"> زن
+            </fieldset>
+            
+            <br>
+
+            <fieldset>
+                <legend>رشته‌های مورد علاقه (فنی)</legend>
+                <input type="checkbox" name="field" value="computer"> مهندسی کامپیوتر<br>
+                <input type="checkbox" name="field" value="electrical"> مهندسی برق<br>
+                <input type="checkbox" name="field" value="mechanical"> مهندسی مکانیک<br>
+                <input type="checkbox" name="field" value="civil"> مهندسی عمران<br>
+                <input type="checkbox" name="field" value="industrial"> مهندسی صنایع<br>
+                <input type="checkbox" name="field" value="materials"> مهندسی مواد
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>مدارک</legend>
+                <label>آپلود مدرک دیپلم (فرمت‌های مجاز: PDF, JPG, PNG): *</label><br>
+                <input type="file" name="diploma_file" accept=".pdf, .jpg, .jpeg, .png" required>
+            </fieldset>
+
+            <br>
+            <input type="submit" value="ارسال فرم ثبت‌نام">
+            <input type="reset" value="پاک کردن فرم">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- صفحه سوم: درباره ما -->
+    <section id="about">
+        <h2>درباره ما</h2>
+        <!-- متن جایگزین شده طبق درخواست شما -->
+        <p>این وب سایت با هدف معرفی دانشگاه آزاد اسلامی واحد بیرجند و آشنایی داوطلبان با فرایند ثبت نام طراحی شده است.</p>
+        <ul>
+            <li><strong>طراح سایت:</strong> علی اسلامی</li>
+            <li><strong>ایمیل ارتباطی:</strong> <a href="mailto:ali@example.com">ali@example.com</a></li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- فوتر برای دسترسی راحت‌تر به لینک‌ها در انتهای صفحه -->
+    <footer>
+        <p>
+            دسترسی سریع: 
+            <a href="#home">صفحه اصلی</a> | 
+            <a href="#register">ثبت‌نام</a> | 
+            <a href="#about">درباره ما</a>
+        </p>
+    </footer>
+
+</body>
+</html>
